@@ -1,0 +1,87 @@
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #30292f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.listUsers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.listUsers li {
+  background-color: #5d737e;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.user_name {
+  font-size: 24px;
+  color: #fcfcfc;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  color: #30292f;
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .user_name {
+    font-size: 10px;
+  }
+  .listUsers li {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .listUsers li {
+    flex: 1 1 100%;
+  }
+}

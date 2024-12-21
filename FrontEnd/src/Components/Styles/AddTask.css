@@ -1,0 +1,127 @@
+/* General container styling */
+.FORM_ADD {
+    padding: 20px;
+    background-color: #FCFCFC;
+    border: 1px solid #5D737E;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-left: 4rem;
+    margin-right: 1rem;
+}
+
+/* Form Heading */
+.FORM_ADD h2 {
+    text-align: center;
+    color: #5D737E;
+    margin-bottom: 20px;
+}
+
+/* Subject container */
+.subject-container label {
+    font-weight: bold;
+    color: #5D737E;
+}
+
+.AddDiv{
+    width: 40vw;
+    margin: 0 auto;
+}
+
+
+.Subject {
+    width: 100%;
+    min-height: 80px;
+    padding: -2px;
+    border: 1px solid #5D737E;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #FCFCFC;
+    color: #5D737E;
+}
+
+.Subject:focus {
+    border-color: #5D737E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(93, 115, 126, 0.5);
+}
+
+/* Checkbox and input container */
+.checkBoxex label {
+    font-weight: bold;
+    color: #5D737E;
+    margin-right: 8px;
+}
+
+.checkBoxex input[type="date"] {
+    width: 30%;
+    padding: 2px;
+    border: 1px solid #5D737E;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Add Button */
+.AddB {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #5D737E;
+    color: #FCFCFC;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.AddB:hover {
+    background-color: #475A63;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 1114px) {
+    .FORM_ADD {
+        padding: 15px;
+        
+    }
+    
+
+    .AddDiv{
+        width: 80vw;
+    margin-left: 2rem;
+    }
+    .Subject {
+        font-size: 12px;
+    }
+
+    .checkBoxex input[type="date"] {
+        width: 100%;
+    }
+
+    .AddB {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .FORM_ADD {
+        padding: 10px;
+    }
+
+    .Subject {
+        min-height: 60px;
+margin-right: 20rem;
+
+    }
+
+    .AddB {
+        font-size: 12px;
+        padding: 8px 12px;
+        border-radius: 6px;
+    }
+}

@@ -1,0 +1,26 @@
+.Footer {
+    background-color: #02111B;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    margin-top: 50vh;
+    left: 0;
+    bottom: -20rem;
+    width: 100vw;
+    height: 30vh;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Footer p {
+    margin: 0;
+    color: #FCFCFC;
+    
+  }
+/*   
+  @media (max-width: 600px) {
+    .Footer {
+      font-size: 12px;
+      padding: 15px;
+    }
+  } */

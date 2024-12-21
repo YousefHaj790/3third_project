@@ -1,0 +1,74 @@
+.EDITTASK {
+  position: fixed;
+  color: #fcfcfc;
+  background-color: #02111b;
+  left: 0;
+  top: 20vh;
+  font-size: 1.5rem;
+  padding: 5px;
+  font-weight: bolder;
+  text-align: left;
+  width: 75vh;
+  height: 43rem;
+  border-radius: 5px;
+  box-shadow: 0px 25px 25px #5d737e;
+  margin-left: 1rem;
+  width: max-content;
+  z-index: 2;
+}
+
+.EDITFORM {
+  padding-left: 1rem;
+}
+
+.EDITFORM > p {
+  color: #fcfcfc;
+  font-size: 1rem;
+  padding-right: 3rem;
+}
+
+.EDITFORM > input,
+.EDITFORM > textarea {
+  margin-left: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+input[type="date"] {
+  width: 10rem;
+  height: 2rem;
+}
+
+.EDITFORM > textarea {
+  width: 20rem;
+  height: 10rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.CLOSE:hover {
+  cursor: pointer;
+}
+
+.EDITB,
+.DELETEB {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 1rem;
+}
+
+.EDITB {
+  background-color: #5d737e;
+}
+
+.DELETEB:hover {
+  background-color: darkred;
+}
+.EDITB:hover {
+  background-color: darkgreen;
+}

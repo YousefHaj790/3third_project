@@ -1,0 +1,157 @@
+/* 
+colors: 
+
+#02111B 
+#3F4045
+#30292F
+#5D737E
+#FCFCFC
+
+
+*/
+
+.NAVIGATOR {
+  margin: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  width: 100vw;
+  height: 2rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  color: #02111b;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 250px -118px 60px 20px #30292f;
+}
+.nav > ul {
+  font-size: 2rem;
+  font-weight: 900;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 4rem;
+}
+.nav > div > img {
+  border-radius: 60rem;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #5d737e;
+}
+
+
+
+.Profile_dropDown {
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 8rem;
+  width: 100vw;
+  z-index: 10;
+  position: absolute;
+  font-size: 1.2rem;
+  color: #30292f;
+  margin-left: -40px;
+  margin-top: -74px;
+}
+
+.Profile_dropDown > ul {
+  padding: 1rem;
+  text-align: left;
+  background-color: #4254a7;
+  color: #fcfcfc;
+  border-radius: 0.7rem;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
+.Profile_dropDown > ul > li > img {
+  margin-top: 1px;
+}
+
+.profileMenu {
+  cursor: pointer;
+}
+
+
+.icon-list {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fcfcfc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+.back {
+  margin-left: 1rem;
+}
+
+.back:hover {
+  width: 8rem;
+  height: 8rem;
+}
+.icon-list > li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #30292f;
+  transform: translateY(-50%);
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon-list > li:hover {
+  transform: scale(1.2);
+}
+
+.disabled {
+  pointer-events: none;
+  color: gray;
+  text-decoration: none;
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+@media (max-width: 1220px) {
+  .icon-list {
+    display: flex;
+  }
+
+  .nav > ul {
+    display: none;
+  }
+  .nav {
+    justify-content: revert;
+  }
+}

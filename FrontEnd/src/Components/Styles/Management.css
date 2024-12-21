@@ -1,0 +1,105 @@
+.Tasks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: auto;
+  width: 80vw;
+  margin: 0 auto;
+  margin-left: 9.5rem;
+  gap: 2rem;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  z-index: 0;
+  border-left: 2px solid #02111b;
+  position: relative;
+}
+
+.Tasks > p {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+a {
+  all: unset;
+}
+
+.Tasks > a > div {
+  margin-left: 2rem;
+  border-radius: 5%;
+  padding: 1rem;
+  width: 20rem;
+  overflow-y: auto;
+}
+
+.Tasks > a > div:hover {
+  cursor: pointer;
+  border: 2px solid #000000;
+  background-color: #f0f0f0; 
+}
+
+.Loading {
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  right: 50vw;
+  bottom: 50vh;
+}
+
+.h1-main {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+}
+@media screen and (max-width: 2025px) {
+  .Tasks {
+    width: 90vw;
+    margin-left: 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    top: 15vh;
+  }
+
+  .Tasks > a > div {
+    width: 15rem;
+  }
+
+  .Tasks > p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Tasks {
+    width: 70vw;
+    margin-left: 2.5vw;
+    grid-template-columns: 1fr;
+    top: 10vh;
+  }
+
+  .Tasks > a > div {
+    width: 100%;
+  }
+
+  .Tasks > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Tasks {
+    width: 60vw;
+    margin-left: 0;
+    top: 10vh;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .Tasks > a > div {
+    width: 60vw;
+  }
+
+  .Tasks > p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,33 @@
+/* TaskList.css */
+
+/* Container for the entire task list */
+.CONTAINER {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers tasks horizontally */
+  justify-content: center; /* Centers tasks vertically */
+  padding: 20px;
+  text-align: center; 
+  margin-top: 5rem;/* Centers text inside the container */
+}
+
+/* Individual task items */
+.sub {
+  background-color: #fcfcfc;
+  color: #30292F;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers content horizontally within the task */
+  align-items: center; /* Centers content vertically within the task */
+  height: 80px; /* Ensures consistent height for each task */
+}
+
+/* Task text */
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}

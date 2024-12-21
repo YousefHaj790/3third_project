@@ -1,0 +1,175 @@
+.DIV {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  left: 15vw;
+  top: 20vh;
+  border: 4px solid #3f4045;
+  padding: 4rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 3rem;
+  box-shadow: 5px 6px 70px 37px #3f4045;
+}
+
+.LOGIN {
+  border-right: 2px solid #3f4045;
+  font-size: 1.4rem;
+  color: #30292f;
+  margin: 3rem;
+  padding: 1rem;
+  font-weight: 900;
+}
+
+.LOGIN > input {
+  height: 3rem;
+  width: 22rem;
+  border: 1px solid #30292f;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.LOGIN > img {
+  position: absolute;
+  border-radius: 60rem;
+  opacity: 0.8;
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.SIGNIN_BTN,
+.SIGNUP_BTN {
+  margin-top: 2.5rem;
+  margin-left: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 2px solid #3f4045;
+  border-radius: 1.5rem;
+  font-weight: bolder;
+  box-shadow: 7px -7px 12px -3px #3f4045;
+}
+
+.SIGNIN_BTN:hover,
+.SIGNUP_BTN:hover {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #30292f;
+}
+
+.THEME {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.THEME > img {
+  margin-top: 2%;
+  border-radius: 3rem;
+  width: 95%;
+  height: 45rem;
+}
+
+.ERROR {
+  color: red;
+  font-size: 1rem;
+}
+
+@media (max-width: 1750px) {
+  .DIV {
+    flex-direction: column;
+    width: 80vw;
+    left: 10vw;
+    padding: 2rem;
+  }
+
+  .LOGIN > img {
+    display: none;
+  }
+
+  .LOGIN {
+    margin: 2rem;
+    border-right: none; /* Remove border on smaller screens */
+    margin-left: 8rem;
+    border-bottom: 2px solid #3f4045;
+  }
+
+  .LOGIN > input {
+    width: 60%;
+    font-size: 1rem;
+  }
+
+  .THEME > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* For Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+  .DIV {
+    flex-direction: column;
+    width: 90vw;
+    left: 5vw;
+    padding: 1.5rem;
+  }
+
+  .LOGIN {
+    margin: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .LOGIN > input {
+    height: 2.5rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .SIGNIN_BTN,
+  .SIGNUP_BTN {
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  .THEME {
+    padding-left: 0;
+  }
+
+  .THEME > img {
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    height: auto;
+  }
+}
+
+/* Extra Small Devices (Narrow Screens) */
+@media (max-width: 480px) {
+  .DIV {
+    padding: 1rem;
+  }
+
+  .LOGIN {
+    margin: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .LOGIN > input {
+    height: 2rem;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .SIGNIN_BTN,
+  .SIGNUP_BTN {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .THEME > img {
+    border-radius: 1rem;
+  }
+}
